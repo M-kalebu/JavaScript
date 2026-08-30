@@ -1,5 +1,4 @@
-
-        // in output and alert in javascript
+// in output and alert in javascript
 // console.log("Hello world!");
 // console.log("I will throughout the javascript course");
 // window.alert("Hello world!")
@@ -44,7 +43,6 @@
 // age = age + 1;
 // console.log(`${name}'s age is ${age}`);
 
-
 // let title = "MoveWithMahesh";
 // let price = 300;
 // let noOfpages = 46;
@@ -54,7 +52,6 @@
 
 // console.log(typeof title)
 // console.log(typeof noOfpages )
-
 
 // class and objects
 
@@ -83,7 +80,6 @@
 
 // }
 
-
 // let vlogChannel = new book("movewithmahesh",450,69);
 
 // console.log(vlogChannel);
@@ -98,18 +94,16 @@
 // console.log(vlogChannel.title)
 // console.log(book.getBookId)
 
-
-
 // let youtubeChannel = {
 //     title : "MoveWithTech",
 //     noVideos : 169,
 //     author : "Mahesh",
-//     age : 21,   
+//     age : 21,
 // };
 
 // console.log(youtubeChannel);
 
-    // ****NUMBER*****
+// ****NUMBER*****
 
 // let age = 23;
 // let percentage = 67.5;
@@ -131,8 +125,7 @@
 // let socialMarks = new Number(69);
 // console.log(socialMarks);
 
-        
-        // *****BigInt*****
+// *****BigInt*****
 
 // let noOfLikes = 9007199254740991n;
 // console.log(noOfLikes);
@@ -153,7 +146,6 @@
 // console.log(num2)
 // console.log(typeof num2)
 // console.log(Number(num2))
-
 
 // let x =(Number.MAX_SAFE_INTEGER + 1);
 // let y =(Number.MAX_SAFE_INTEGER + 2);
@@ -181,7 +173,6 @@
 // console.log(name);
 // console.log(typeof name)
 
-
 //Null
 
 // let myMoney;
@@ -201,7 +192,6 @@
 // console.log(id2)
 // console.log(typeof id2)
 
-
 // small function logic
 
 // function myBalance(){
@@ -210,8 +200,6 @@
 
 // let yourBalance = myBalance();
 // console.log(yourBalance);
-
-
 
 // function miniStatement(){
 //  console.log("Present Not Available");
@@ -237,12 +225,9 @@
 // console.log(typeof heightInNumber);
 // console.log(typeof weightInNumber);
 
-
-
 // console.log("height",height);
 // console.log(heightInMeters);
 // console.log("weight",weight);
-
 
 // let name = 7671962366;
 // console.log(name);
@@ -306,7 +291,6 @@
 // console.log(marks5--);
 // console.log(marks5)
 
-
 // console.log((0.1 + 0.7).toFixed(2))
 
 // let userName = prompt("Enter your name");
@@ -334,14 +318,13 @@
 
 // bmi > 25 ? console.log("Fat") : bmi < 18.5 ? console.log("Thin") : console.log("Average")
 
-
 // let kalebuMarks = Number(prompt("Enter your marks"));
 // let maheshMarks = Number(prompt("Enter your marks"));
 // console.log(`kalebuMarks ${kalebuMarks}`)
 // console.log(`maheshMarks ${maheshMarks}`)
 // console.log(kalebuMarks > maheshMarks)
 
-// If statements 
+// If statements
 
 // let result = prompt("Are you interested this book !")
 // // console.log(result)
@@ -372,8 +355,8 @@
 // if(isSubscribe.toLowerCase() == "yes") console.log("Thank you for subscribed!");
 // else console.log("Please subscribe")
 
-// isSubscribe.toLowerCase() == "yes" 
-// ? console.log("Thank you for subscribed!") 
+// isSubscribe.toLowerCase() == "yes"
+// ? console.log("Thank you for subscribed!")
 // : console.log("Please subscribe");
 
 // let isSeatAvailable = prompt("Is seat available now");
@@ -398,10 +381,67 @@
 //         alert("No seats are required at this time!");
 // }
 
+// let userName = prompt("Enter your username")
+// let password = prompt("Enter your password")
+// if(userName == "kalebu" && password == "12345"){
+//         console.log("Welcome to instagram ")
+// }else
+//         console.log("Invalid crendentials");
 
-let userName = prompt("Enter your username")
-let password = prompt("Enter your password")
-if(userName == "kalebu" && password == "12345"){
-        console.log("Welcome to instagram ")
-}else
-        console.log("Invalid crendentials");
+// let x = Number(prompt("Enter your number"));
+// if(x > 5 && x < 15) console.log(`${x} is 5 between 15`);
+// else console.log("Invalid")
+
+// let name;
+// console.log(name);
+//  name = 'kalebu';
+// console.log(name);
+
+// ******Functions*****
+
+let kalebuAge,vinayAge,maheshAge;
+
+kalebuAge = prompt("Enter your age");
+let updatedAge = 0;
+// console.log(`kalebu age is ${kalebuAge}`);
+// let updatedAge = +kalebuAge + 0;
+// console.log("current total age is: ",updatedAge)
+thankYou("Kalebu",kalebuAge);
+
+vinayAge = prompt("Enter your age");
+// console.log(`vinay age is ${vinayAge}`);
+// updatedAge += +vinayAge
+// console.log("current total age is: ",updatedAge)
+thankYou("Vinay",vinayAge);
+
+maheshAge = prompt("Enter your age");
+// console.log(`mahesh age is ${maheshAge}`);
+// updatedAge += +maheshAge
+// console.log("current total age is: ",updatedAge)
+thankYou("Mahesh",maheshAge);
+
+function thankYou(name,age){
+    console.log(`${name} age is ${age || "Not entered"}`);
+    updatedAge = updatedAge + +age;
+    if(age > 18){
+        console.log(`${name}, You will get a driving licence`)
+    }else{
+        console.log(`${name}, You need to wait for ${18 - age} more years to get driving licence`)
+    }
+    console.log("current total age is: ",updatedAge)
+    console.log("Thanks for response");
+    if(age > 18){
+        console.log("Please subscribe our channel");
+    }else{
+        console.log(`You will wait for ${18 - age} more years to get subscribed!`)
+    }
+}
+
+
+
+
+
+// let thankYouMessage = function () {
+//   console.log("Thank you for answering");
+//   console.log("Please subscribe our channel");
+// };
