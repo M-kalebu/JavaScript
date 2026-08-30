@@ -399,49 +399,83 @@
 
 // ******Functions*****
 
-let kalebuAge,vinayAge,maheshAge;
+// let kalebuAge,vinayAge,maheshAge;
 
-kalebuAge = prompt("Enter your age");
-let updatedAge = 0;
+// kalebuAge = prompt("Enter your age");
+// let updatedAge = 0;
 // console.log(`kalebu age is ${kalebuAge}`);
 // let updatedAge = +kalebuAge + 0;
 // console.log("current total age is: ",updatedAge)
-thankYou("Kalebu",kalebuAge);
+// thankYou("Kalebu",kalebuAge);
 
-vinayAge = prompt("Enter your age");
+// vinayAge = prompt("Enter your age");
 // console.log(`vinay age is ${vinayAge}`);
 // updatedAge += +vinayAge
 // console.log("current total age is: ",updatedAge)
-thankYou("Vinay",vinayAge);
+// thankYou("Vinay",vinayAge);
 
-maheshAge = prompt("Enter your age");
+// maheshAge = prompt("Enter your age");
 // console.log(`mahesh age is ${maheshAge}`);
 // updatedAge += +maheshAge
 // console.log("current total age is: ",updatedAge)
-thankYou("Mahesh",maheshAge);
+// thankYou("Mahesh",maheshAge);
 
-function thankYou(name,age){
-    console.log(`${name} age is ${age || "Not entered"}`);
-    updatedAge = updatedAge + +age;
-    if(age > 18){
-        console.log(`${name}, You will get a driving licence`)
-    }else{
-        console.log(`${name}, You need to wait for ${18 - age} more years to get driving licence`)
-    }
-    console.log("current total age is: ",updatedAge)
-    console.log("Thanks for response");
-    if(age > 18){
-        console.log("Please subscribe our channel");
-    }else{
-        console.log(`You will wait for ${18 - age} more years to get subscribed!`)
-    }
-}
-
-
-
-
+// function thankYou(name,age){
+//     console.log(`${name} age is ${age || "Not entered"}`);
+//     updatedAge = updatedAge + +age;
+//     if(age > 18){
+//         console.log(`${name}, You will get a driving licence`)
+//     }else{
+//         console.log(`${name}, You need to wait for ${18 - age} more years to get driving licence`)
+//     }
+//     console.log("current total age is: ",updatedAge)
+//     console.log("Thanks for response");
+//     if(age > 18){
+//         console.log("Please subscribe our channel");
+//     }else{
+//         console.log(`You will wait for ${18 - age} more years to get subscribed!`)
+//     }
+// }
 
 // let thankYouMessage = function () {
 //   console.log("Thank you for answering");
 //   console.log("Please subscribe our channel");
 // };
+
+// *** Scopes ***
+// {
+//     let a = 25;
+//     let b = 35;
+//     console.log(a + b);
+// }
+
+// let userName = "kalebu";
+// let password = 693197;
+
+
+// function isValidUser(name){
+//     if(userName === "kalebu" && password === 693197){
+//         console.log("Welcome, valid user")
+//     }else{
+//         console.log("invalid crendentails");
+//     }
+//     console.log(name);
+// }
+
+// isValidUser("kalebu")
+
+
+// let globalVar = "I am in the global scope";
+
+// function outerFunction(){
+//     let outerVar = "I am in the outer scope";
+
+//     function innerFunction(){
+//         let innerVar = "I am in the inner scope";
+
+//         console.log(innerVar);
+//         console.log(outerVar);
+//         console.log(globalVar);
+//     }innerFunction()
+// }outerFunction()
+
