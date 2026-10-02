@@ -80,6 +80,25 @@
 
 // }
 
+// class book {
+//     static author = "Mahesh";
+//     static producer = "kalebu";
+//     constructor(title,price,noOfpages){
+//         this.title = title;
+//         this.price = price;
+//         this.nPages = noOfpages;
+//     }
+// }
+
+// let updatedBook = new book("Move With Mahesh",1200,89);
+
+// console.log(updatedBook);
+
+// console.log(book.author);
+// console.log(book.producer);
+
+
+
 // let vlogChannel = new book("movewithmahesh",450,69);
 
 // console.log(vlogChannel);
@@ -479,3 +498,111 @@
 //     }innerFunction()
 // }outerFunction()
 
+
+// ****Objects in javascript*****
+// And classes with objects in javascript
+
+// class Student{
+//     static COLLEGE_NAME = "Aditya University";
+//     constructor(name,phone,address){
+//         this.name = name;
+//         this.phone = phone;
+//         this.addres = address;
+//     }
+// }
+
+// let student1 = new Student("Kalebu",7671962366,"CTRI,Rajahmundry");
+// console.log(student1);
+// console.log(student1 instanceof Student);
+// let student2 = new Student("Mahesh",9064848494,"CTRI,Rajahmundry");
+// console.log(student2);
+// console.log(Student.COLLEGE_NAME);
+
+// let student = {
+//     name:"kalebu",
+//     roll:2366,
+//     address:"CTRI,RJY",
+// };
+
+// console.log(student)
+
+// student.roll = 6224;
+// console.log(student);
+
+// student.address = "RK Beach,Vizag";
+// console.log(student);
+
+// student.phone = 7671962773;
+// console.log(student);
+
+// delete student.phone;
+
+// console.log(student)
+
+// let student = {
+//     name : "kalebu",
+//     rollNO : 2366,
+//     course : "BTech",
+// };
+// console.log(student)
+// console.log(student.rollNO)
+
+// student.name ="mahesh";
+// console.log(student)
+
+// student.address = "CTRI RJY";
+// console.log(student)
+
+// delete student.address;
+// console.log(student)
+
+
+// Rough figure for class
+
+// class Student{
+//     static college_Name = "AdityaUniversity";
+//     constructor(name,rollNo,branch){
+//         this.name = name;
+//         this.rollNo = rollNo;
+//         this.branch = branch;
+//         this.college_Name = Student.college_Name;
+//     }
+
+//     updatedBranch(newbranch){
+//         this.branch = newbranch;
+//     }
+// }
+
+// let stu1 = new Student("mahesh",2366,"Mech", Student.college_Name);
+// console.log(stu1);
+
+// stu1.updatedBranch("AI&ML");
+// console.log(stu1)
+
+class book{
+    static author = "Mahesh";   // static properties
+    constructor(title,price,npages){
+        this.title = title;   // instance properties
+        this.price = price;
+        this.npages = npages;
+    }
+
+    static getBookId(){   // static method
+        return book.author;
+    }
+
+    updatedPrice(newPrice){  // instance method
+        this.price = newPrice;
+    }
+
+}
+
+let book1 = new book("Move with mahesh",500,329);
+console.log(book1)
+book1.updatedPrice(720);
+
+console.log(book1)
+
+
+console.log(book.author)
+console.log(book.getBookId())
