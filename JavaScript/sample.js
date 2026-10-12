@@ -579,30 +579,94 @@
 // stu1.updatedBranch("AI&ML");
 // console.log(stu1)
 
-class book{
-    static author = "Mahesh";   // static properties
-    constructor(title,price,npages){
-        this.title = title;   // instance properties
-        this.price = price;
-        this.npages = npages;
-    }
+// class book{
+//     static author = "Mahesh";   // static properties
+//     constructor(title,price,npages){
+//         this.title = title;   // instance properties
+//         this.price = price;
+//         this.npages = npages;
+//     }
 
-    static getBookId(){   // static method
-        return book.author;
-    }
+//     static getBookId(){   // static method
+//         return book.author;
+//     }
 
-    updatedPrice(newPrice){  // instance method
-        this.price = newPrice;
-    }
+//     updatedPrice(newPrice){  // instance method
+//         this.price = newPrice;
+//     }
 
-}
+// }
 
-let book1 = new book("Move with mahesh",500,329);
-console.log(book1)
-book1.updatedPrice(720);
+// let book1 = new book("Move with mahesh",500,329);
+// console.log(book1)
+// book1.updatedPrice(720);
 
-console.log(book1)
+// console.log(book1)
 
 
-console.log(book.author)
-console.log(book.getBookId())
+// console.log(book.author)
+// console.log(book.getBookId())
+
+
+// let student = {
+//     name : "kalebu",
+//     age : 23,
+//     phNo : "088076",
+//     gender : "male",
+// }
+
+// console.log(student)
+// student.gender = "Female";
+// console.log(student)
+
+
+
+// *****Learning Objects****
+
+// alert("welcome to part 2 of objects");
+
+// let wish = function(){
+//     console.log("Happy birthday");
+//     console.log("Everything is fine")
+// }
+
+// wish()
+
+// let student = {
+//     name : "Mahesh",
+//     Ph : "76719767",
+//     Age : 23,
+//     wish : function(){
+//     console.log("Happy birthday");
+//     console.log("Everything is fine")
+// }
+// };
+
+// alert(JSON.stringify(student))
+
+// student.wish();
+
+// let key = prompt("Enter key what do you want name or age ?");
+// let key1 = prompt("Enter key what do you want name or age ?");
+// // console.log(key);
+// const user = {
+//     name : "kalebu",
+//     age : 23,
+// }
+
+// console.log(user[key])
+// console.log(user[key1])
+
+const name = "kalebu";
+const age = 23;
+const role = "Software developer";
+
+// const employe = {
+//     name : name,
+//     age : age,
+//     role :role,
+// }
+
+const employe = {name,age,role}
+
+console.log(employe)
